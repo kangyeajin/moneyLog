@@ -19,6 +19,7 @@ npm 버전 : 10.8.1<br>
 * 기본설치패키지 : npm install dotenv express express-session body-parser express-rate-limit mssql path
 
 프로젝트 구조<br>
+```js
  MoneyLog/
  ├── backend/             # Node.js 백엔드 서버
  │   ├── src/             # 소스 코드 (가독성을 위해 추가)
@@ -35,3 +36,4 @@ npm 버전 : 10.8.1<br>
  │   ├── .gitignore
  │   └── README.md
  └── frontend/          # Vue 프론트엔드 프로젝트
+```

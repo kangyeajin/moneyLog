@@ -28,6 +28,7 @@ body :
 ```
 
 << 전체 프로젝트 구조 >><br>
+```js
  MoneyLog/
  ├── backend/             # Node.js 백엔드 서버
  │   ├── src/             # 소스 코드 (가독성을 위해 추가)
@@ -69,3 +70,4 @@ body :
  ├── .editorconfig
  ├── README.md          # 최상위 프로젝트 설명
  └── .vscode/           # VSCode 설정
+```

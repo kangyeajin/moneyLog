@@ -36,6 +36,7 @@ vue 버전 : 3.5.13<br>
 5000번 포트 사용 (http://localhost:5000/)<br>
 
 프로젝트 구조<br>
+```js
  MoneyLog/
  ├── backend/               # Node.js 백엔드 서버 (Express + MySQL)
  ├── frontend/              # Vue 프론트엔드 프로젝트 (Vite)
@@ -57,4 +58,4 @@ vue 버전 : 3.5.13<br>
  │   ├── .gitignore
  │   ├── .env               # 프로젝트 환경 설정
  │   └── README.md
-
+```
