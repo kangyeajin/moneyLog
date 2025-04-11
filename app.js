@@ -14,14 +14,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// // Vue 정적 파일 서빙
-// //const __dirname = path.resolve();
-// app.use(express.static(path.join(__dirname, 'front', 'dist')));
-
-// // Vue SPA 처리 (history 모드 지원)
-// app.get('*', (req, res) => {
-//   res.sendFile(path.join(__dirname, 'front', 'dist', 'index.html'));
-// });
+// Set EJS as the view engine
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
 
 // 미들웨어 설정
 app.use(
@@ -45,14 +40,6 @@ app.use(
     })
   );
 
-// 로그인 횟수 제한
-const loginLimiter = rateLimit({
-  windowMs: 5 * 60 * 1000,
-  max: 5,
-  message: "5분 후 다시 시도해주세요...",
-});
-
-app.use("/login", loginLimiter);
 
 const PORT = parseInt(process.env.PORT);
 app.listen(PORT, () => {
@@ -60,6 +47,5 @@ app.listen(PORT, () => {
 });
 
 // 라우터 등록 - 모든 경로는 라우터로 보내 처리
-// API 라우터
 const indexRouter = require("./routes/index.js");
-app.use("/api", indexRouter);
+app.use("/", indexRouter);
