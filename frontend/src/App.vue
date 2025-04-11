@@ -1,29 +1,26 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+// import TheWelcome from './components/TheWelcome.vue'
 
 </script>
 
 <template>
-  <header>
+<!--   <header>
     <img alt="Vue logo" class="logo" src="./img/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
     </div>
-  </header>
+  </header> -->
 
   <main>
-    <TheWelcome />
+    <!-- <TheWelcome /> -->
+    <router-view />
   </main>
-
-  ======= test =======
-  <router-view />
-  ======= test =======
 
 </template>
 
-<style scoped>
+<!-- <style scoped>
 header {
   line-height: 1.5;
 }
@@ -51,3 +48,4 @@ header {
   }
 }
 </style>
+ -->
